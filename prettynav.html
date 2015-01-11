@@ -1,0 +1,238 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Dark Menu Nav</title>
+    <style type="text/css">
+ body
+ {
+	height: 100%;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	color: blue;
+}
+
+/*--------- Dark Menu Styles Begin ---------*/
+
+        /* Main Dark Menu Unordered List First Level Style */
+        ul.dark_menu {
+            list-style: none;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        /* Clears all floated List Items */
+        ul.dark_menu:after {
+            content: "";
+            clear: both;
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+            /* First Level List Items Style */
+            ul.dark_menu li {
+                float: left;
+                margin: 0 0 0 3px;
+                position: relative;
+            }
+
+            /* First List Item in First Level Style */
+            ul.dark_menu li:first-child {
+                margin: 0;
+            }
+
+            /* List Items Links Style */
+			ul.dark_menu li a, ul.dark_menu li a:link {
+				color: #92a5bf;			/***** our MAIN menu color *****/
+				text-decoration: none;
+				display: block;
+				padding: 3px 3px;
+				
+				/* Text Shadow */
+				text-shadow: 2px 2px 3px #4e5866;
+				
+				/* Transition Effect */
+				-webkit-transition: all 500ms ease;
+				-moz-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				-ms-transition: all 500ms ease;
+				transition: all 500ms ease;
+			}
+
+				/* List Items Links Hover State Style */
+				ul.dark_menu li a:hover {
+					color: #53a0ff;
+					
+					/* Text Shadow */
+					text-shadow: 3px 3px 4px #4e5866;
+
+					/* Transition Effect */
+					-webkit-transition: all 500ms ease;
+					-moz-transition: all 500ms ease;
+					-o-transition: all 500ms ease;
+					-ms-transition: all 500ms ease;
+					transition: all 500ms ease;
+				}
+
+				/* List Items Links Active and Selected State Style */
+				ul.dark_menu li a.selected, ul.dark_menu li a:active {
+					color: #73635e;
+					background: #212328;
+
+					/* Text Shadow */
+					text-shadow: 3px 3px 4px #4e5866;
+					
+					/* Transition Effect */
+					-webkit-transition: all 500ms ease;
+					-moz-transition: all 500ms ease;
+					-o-transition: all 500ms ease;
+					-ms-transition: all 500ms ease;
+					transition: all 500ms ease;
+                }
+
+                    /* Sub Menu Unordered List Second Level Style */
+                    ul.dark_menu li ul {
+                        display: none;
+                    }
+
+                    /* Before Second Level Unordered List Style */
+                    ul.dark_menu li ul:before {
+                        content: " ";
+                        position: absolute;
+                        display: block;
+                        z-index: 1500;
+                        left: 0;
+                        top: -10px;
+                        height: 10px;
+                        width: 100%;
+                    }
+
+                    /* Sub Menu Unordered List Second Level Style
+                        When Parent List Item is Hovered */
+                    ul.dark_menu li:hover ul {
+                        position: absolute;
+                        display: block;
+                        z-index: 1000;
+                        left: 0;
+                        top: 28px;
+                        padding: 2px 0;
+                        list-style: none;
+                    }
+
+					
+                        /* Second Level Menu List Items Style */
+                        ul.dark_menu li ul li {
+                            float: none;
+                            margin: 0 5px;                            
+                            border-bottom: 1px solid #141619;
+                            border-top: 1px solid #30323a;
+                        }
+
+                        /* First List Item in Second Level Menu Style */
+                        ul.dark_menu li ul li:first-child {
+                            margin: 0 5px;
+                            border-top: 0 none;
+                        }
+
+                        /* Last List Item in Second Level Menu Style */
+                        ul.dark_menu li ul li:last-child {
+                            border-bottom: 0 none;
+                        }
+
+                        /* Second Level List Items Links Style */
+                        ul.dark_menu li ul li a, ul.dark_menu li ul li a:link {
+                            color: #5e6373;
+                            display: block;
+                            background: transparent none;
+                            padding: 10px 20px 10px 5px;
+                            white-space: nowrap;
+
+                            /* Text Shadow */
+                            text-shadow: 3px 3px 4px #4e5866;
+
+                        }
+
+                        /* Second Level List Items Links Hover State Style */
+                        ul.dark_menu li ul li a:hover {
+                            text-decoration: underline;
+                            background: #23252a;
+                        }
+
+/*----------------------------------------*/
+/*--------- Dark Menu Styles End ---------*/
+/*----------------------------------------*/
+    </style>
+
+</head>
+<body>
+	<div>
+		<!-- Dark Menu Begin -->
+		<ul class="dark_menu">
+
+			<li><a href="http://www.nonapp.com/page/About.html" target="_top">About</a></li>
+
+			<li><a href="http://knowledgefire.wordpress.com/" target="_top">Blog</a></li>
+			
+			<li>
+				<a href="#">Build</a>
+				<!-- Build Sub Menu Begin -->
+				<ul>
+					<li><a href="http://www.nonapp.com/page/Build.html" target="_top">Here</a></li>
+					<li><a href="http://hackaday.io/hacker/849" target="_top">hackaday.io</a></li>
+				</ul>
+				<!-- Sub Menu End -->
+			</li>
+
+			<li>
+				<a href="#">Code</a>
+				<!-- Sub Menu Begin -->
+				<ul>
+					<li><a href="https://www.nonapp.com/page/Code.html" target="_top">Here</a></li>
+					<li><a href="https://github.com/GCStokum" target="_top">Github</a></li>
+				</ul>
+				<!-- Sub Menu End -->
+			</li>
+
+			<li>
+				<a href="#">Image</a>
+				<!-- Images Sub Menu Begin -->
+				<ul>
+					<li><a href="http://www.nonapp.com/page/Art.html" target="_top">My Art</a></li>
+					<li><a href="https://plus.google.com/+GCarterStokum/photos" target="_top">G+ Gallery</a></li>
+					<li><a href="http://imgur.com/user/naMretupmoC/submitted" target="_top">Imgur</a></li>
+				</ul>
+				<!-- Sub Menu End -->
+			</li>
+
+			<li><a href="http://www.nonapp.com/page/resume/resume.html" target="_top">Resume</a></li>
+
+			<li>
+				<a href="#">Social</a>
+				<!-- Social Sub Menu Begin -->
+				<ul>
+					<li><a href="https://plus.google.com/+GCarterStokum" target="_top">G+</a></li>
+					<li><a href="https://www.linkedin.com/pub/carter-stokum/74/bb9/b38" target="_top">Linkedin</a></li>
+					<li><a href="https://twitter.com/naMretupmoC" target="_top">Twitter</a></li>
+				</ul>
+				<!-- Sub Menu End -->
+			</li>
+			
+			<li><a href="https://soundcloud.com/namretupmoc" target="_top">Sound</a></li>
+			
+			<li><a href="https://www.youtube.com/user/TerracS" target="_top">Video</a></li>
+
+		</ul>
+		<!-- Dark Menu End -->
+	</div>
+
+</body>
+</html>
