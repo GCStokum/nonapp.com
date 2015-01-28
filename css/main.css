@@ -3,7 +3,7 @@ body
 	margin: 0 auto;
 	vertical-align: middle;
 	background-color: #1A1A1A;
-	background-image:url('http://www.nonapp.com/img/BG.jpg');
+	background-image:url('../img/BG.jpg');
 }
 
 nav
@@ -28,6 +28,11 @@ div
 	width: 620px;
 }
 
+.w800
+{
+  width: 800px;
+}
+
 .w960
 {
 	width: 960px;
@@ -35,6 +40,8 @@ div
 
 .center
 {
-	vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
 	margin: 0 auto;
 }

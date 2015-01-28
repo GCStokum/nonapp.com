@@ -49,7 +49,7 @@
             /* List Items Links Style */
             ul.dark_menu li a, ul.dark_menu li a:link {
                 color: #92a5bf;  /***** our MAIN menu color *****/
-                text-decoration: none;
+                text-decoration: none; /* kills link underline */
                 display: block;
                 padding: 3px 3px;
 
@@ -67,7 +67,7 @@
             /* List Items Links Hover State Style */
             ul.dark_menu li a:hover {
                 color: #53a0ff;
-
+                text-decoration: none;
                 /* Text Shadow */
                 text-shadow: 3px 3px 4px #4e5866;
 
@@ -81,8 +81,8 @@
 
             /* List Items Links Active and Selected State Style */
             ul.dark_menu li a.selected, ul.dark_menu li a:active {
-                color: #73635e;
-                background: #212328;
+                color: #92a5bf;
+                /* background: #212328; */
 
                 /* Text Shadow */
                 text-shadow: 3px 3px 4px #4e5866;
@@ -146,21 +146,31 @@
 
             /* Second Level List Items Links Style */
             ul.dark_menu li ul li a, ul.dark_menu li ul li a:link {
-                color: #5e6373;
+                color: #92a5bf;
                 display: block;
                 background: transparent none;
                 padding: 10px 20px 10px 5px;
                 white-space: nowrap;
-
                 /* Text Shadow */
                 text-shadow: 3px 3px 4px #4e5866;
-
             }
 
             /* Second Level List Items Links Hover State Style */
             ul.dark_menu li ul li a:hover {
-                text-decoration: underline;
-                background: #23252a;
+                text-decoration: none;
+                /* background: #23252a; */
+
+                color: #53a0ff;
+                text-decoration: none;
+                /* Text Shadow */
+                text-shadow: 3px 3px 4px #4e5866;
+
+                /* Transition Effect */
+                -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                transition: all 500ms ease;
             }
         </style>
     </head>
